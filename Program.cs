@@ -13,21 +13,27 @@ namespace lab1
 
             Console.WriteLine($"Мене звати {firstName} {lastName}, мені {age} років.");
             Console.WriteLine("-------------------------");
-            Console.Read();
+            Console.ReadLine();
 
             //task2
             int a = 3;
             int b = 1;
 
-            double result = (Math.Pow((a+b), 2f) - Math.Pow(a,2) + 2*a*b) / Math.Pow(a,2);
+            double result = (Math.Pow(a+b, 2f) - Math.Pow(a,2) + 2*a*b) / Math.Pow(a,2);
 
-            Console.Write(result);
+            Console.WriteLine(result);
             Console.WriteLine("-------------------------");
-            Console.Read();
 
             //task3
-            string number = Console.ReadLine();
-            Console.WriteLine(number.Reverse());
+            double number = Convert.ToDouble(Console.ReadLine());
+ 
+            double first = number % 10;
+            double second = (number % 100 - first)/10;
+            double third = (number - second*10 - first)/100;
+            
+            string reversed = first.ToString()+second.ToString()+third.ToString();
+            Console.WriteLine(reversed);
+            Console.Read();
         }
     }
 }
