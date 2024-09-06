@@ -1,13 +1,13 @@
 ﻿namespace lab1
 {
-    class Program1 {
+    class Program {
         static void Main(string[] args) {
             //task1
             string firstName = "Євгеній";
             string lastName = "Боримський";
             int age = 17;
 
-            Console.Write("Мене звати {0} {1}, мені {2} років.", firstName, lastName, age);
+            Console.Write($"Мене звати {firstName} {lastName}, мені {age} років.");
             Console.Read();
             
             //task2
