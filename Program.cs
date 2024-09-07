@@ -21,20 +21,16 @@ namespace lab1
             int a = 3;
             int b = 1;
 
-            double result = (Math.Pow(a+b, 2f) - Math.Pow(a,2) + 2*a*b) / Math.Pow(a,2);
+            double result = (Math.Pow(a + b, 2f) - Math.Pow(a,2) + 2 * a * b) /  Math.Pow(b,2);
 
             Console.WriteLine(result);
             Console.WriteLine("-------------------------");
 
             //task3
-            double number = Convert.ToDouble(Console.ReadLine());
- 
-            double first = number % 10;
-            double second = (number % 100 - first)/10;
-            double third = (number - second*10 - first)/100;
+            int number = int.Parse(Console.ReadLine());
             
-            string reversed = first.ToString()+second.ToString()+third.ToString();
-            Console.WriteLine(reversed);
+            int reversed = number % 10 * 100 + number % 100 + number / 100;
+            Console.WriteLine(reversed.);
             Console.Read();
         }
     }
