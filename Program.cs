@@ -21,7 +21,7 @@ namespace lab1
             int a = 3;
             int b = 1;
 
-            double result = (Math.Pow(a + b, 2f) - Math.Pow(a,2) + 2 * a * b) /  Math.Pow(b,2);
+            double result = (Math.Pow(a + b, 2) - (Math.Pow(a, 2) + 2 * a * b)) /  Math.Pow(b,2);
 
             Console.WriteLine(result);
             Console.WriteLine("-------------------------");
