@@ -11,7 +11,9 @@ namespace lab1
             string lastName = "Боримський";
             int age = 17;
 
-            Console.WriteLine($"Мене звати {firstName} {lastName}, мені {age} років.");
+            string result = $"Мене звати {firstName} {lastName}, мені {age} років.";
+
+            Console.WriteLine(result);
             Console.WriteLine("-------------------------");
             Console.ReadLine();
 
