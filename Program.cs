@@ -29,7 +29,7 @@ namespace lab1
             //task3
             int number = int.Parse(Console.ReadLine());
             
-            int reversed = number % 10 * 100 + number % 100 + number / 100;
+            int reversed = number % 10 * 100 + number % 100 / 10 * 10 + number / 100;
             Console.WriteLine(number + "=>" + reversed);
             Console.Read();
         }
