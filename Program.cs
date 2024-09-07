@@ -11,9 +11,9 @@ namespace lab1
             string lastName = "Боримський";
             int age = 17;
 
-            string result = $"Мене звати {firstName} {lastName}, мені {age} років.";
+            string output = $"Мене звати {firstName} {lastName}, мені {age} років.";
 
-            Console.WriteLine(result);
+            Console.WriteLine(output);
             Console.WriteLine("-------------------------");
             Console.ReadLine();
 
@@ -30,7 +30,7 @@ namespace lab1
             int number = int.Parse(Console.ReadLine());
             
             int reversed = number % 10 * 100 + number % 100 + number / 100;
-            Console.WriteLine(reversed.);
+            Console.WriteLine(number + "=>" + reversed);
             Console.Read();
         }
     }
